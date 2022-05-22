@@ -1,0 +1,29 @@
+int nums[4], N, value[4];
+    nums[1] = 1;
+    nums[2] = 2;
+    nums[3] = 3;
+    value[1] = 0;
+    value[2] = 0;
+    value[3] = 0;
+    new_file >> N;
+    for(int i = 0;i < N;i++){
+        int a = 0, b = 0, g = 0, k = 0;
+        new_file >> a;
+        new_file >> b;
+        new_file >> g;
+        cout << a;
+        k = nums[a];
+        nums[a] = nums[b];
+        nums[b] = k;
+        
+        value[g]++;
+    }
+    // now i need to add a function that
+    // get the biggest value;
+    int biggest = 0, bigger = 0;
+    for(int i = 1;i < 4;i++){
+        if(value[i] > biggest){
+            biggest = value[i];
+            bigger = i;
+        }
+    }
