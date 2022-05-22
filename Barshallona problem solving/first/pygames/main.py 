@@ -1,0 +1,26 @@
+g = int(input("what is the month: "))
+print("this month contains ")
+if g == 1:
+    print(31)
+elif g == 2:
+    print(28)
+elif g == 3:
+    print(31)
+elif g == 4:
+    print(30)
+elif g == 5:
+    print(29)
+elif g == 6:
+    print(30)
+elif g == 7:
+    print(31)
+elif g == 8:
+    print(31)
+elif g == 9:
+    print(30)
+elif g == 10:
+    print(30)
+elif g == 11:
+    print(30)
+elif g == 12:
+    print(31)
